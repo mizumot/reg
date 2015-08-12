@@ -116,15 +116,6 @@ shinyServer(function(input, output) {
         aic()
     })
     
-    output$downloadCorPlot <- downloadHandler( # 名前変更
-    filename = function() {
-        paste('Corplot-', Sys.Date(), '.pdf', sep='') # 名前変更
-    },
-    content = function(FILE=NULL) {
-        pdf(file=FILE)
-		print(makecorPlot()) # 名前変更
-		dev.off()
-	})
-    
+   
 
 })

@@ -1,6 +1,6 @@
-
-
 library(shiny)
+library(shinyAce)
+
 
 shinyUI(bootstrapPage(
 
@@ -34,7 +34,6 @@ shinyUI(bootstrapPage(
 
             strong("Scatter plot matrices"),
             br(),
-            downloadButton('downloadCorPlot', 'Download the plot as pdf'),
 
             plotOutput("corPlot"),
 
